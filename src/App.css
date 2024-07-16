@@ -1,0 +1,149 @@
+@font-face {
+  font-family: main-font;
+  src: url(font.otf)
+}
+
+@font-face {
+  font-family: secondary-font;
+  src: url(Roboto-Regular.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(42, 47, 45);
+}
+
+.button-0{
+  background-color: rgb(113, 67, 204);
+  color: white;
+  font-family: secondary-font;
+  font-weight: bold;
+  border-style: groove;
+  padding: .5rem;
+  border-color: #f965c6;
+  border-radius: 10px;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.button-1{
+  background-color: rgb(113, 67, 204);
+  color: white;
+  font-family: secondary-font;
+  font-weight: bold;
+  border-style: groove;
+  padding: .5rem;
+  border-color: #f965c6;
+  border-radius: 10px;
+  margin-left: 55px;
+  cursor: pointer;
+}
+.react-chatbot-kit-chat-container {
+  width: 350px;
+  bottom: 50px;
+  right: 50px;
+  margin: 35px;
+  position: fixed;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  margin-left: 50px;
+}
+
+.react-chatbot-kit-chat-header {
+  font-family: main-font;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  font-family: secondary-font;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 500px;
+  background-color: #242424;
+  border-radius: 3px;
+  border-radius: 5px;
+}
+
+.react-chatbot-kit-chat-header {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #000000;
+  font-family: main-font;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #f965c6;
+  padding: 12.5px;
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.chatbot-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 16px; /* Increased padding for larger clickable area */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.chatbot-icon {
+  width: 48px; /* Larger size for the icon */
+  height: 48px; /* Larger size for the icon */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+  animation: bounce 2s infinite; /* Apply the bounce animation */
+}
+
+.chatbot-icon.open {
+  opacity: 1;
+}
+
+.chatbot-icon.close {
+  opacity: 0.7;
+}
+
+.chatbot-toggle-button:active .chatbot-icon {
+  transform: scale(0.9); /* Slightly shrink on click for a more interactive feel */
+}
+
+.avatar {
+  width: 50px; /* Set desired width */
+  height: 50px; /* Set desired height */
+  margin-left: -10px;
+  margin-right: -40px;
+  overflow: hidden; /* Ensure no overflow */
+  border-radius: 50%; /* Make it circular */
+}
+
+.avatar img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
