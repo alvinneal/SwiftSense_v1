@@ -1,4 +1,4 @@
-# SwiftSense_JS
+# SwiftSense_V1
 Revamped JavaScript Version
 
 This is the updated, lightweight and faster version of SwiftSense which uses MessageParsers and ActionProviders. 
