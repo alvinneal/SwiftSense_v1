@@ -1,11 +1,11 @@
 @font-face {
   font-family: main-font;
-  src: url(font.otf)
+  src: url(https://sjbhs.edu.in/swiftSenseV1/font.otf)
 }
 
 @font-face {
   font-family: secondary-font;
-  src: url(Roboto-Regular.ttf)
+  src: url(https://sjbhs.edu.in/swiftSenseV1/Roboto-Regular.ttf)
 }
 
 * {
@@ -25,27 +25,28 @@
 
 .button-0{
   background-color: rgb(113, 67, 204);
-  color: white;
-  font-family: secondary-font;
-  font-weight: bold;
-  border-style: groove;
-  padding: .5rem;
-  border-color: #f965c6;
-  border-radius: 10px;
-  margin: 0.2rem;
+  color: white !important;
+  font-family: secondary-font !important;
+  font-weight: bold !important;
+  border-style: groove !important;
+  padding: .5rem !important;
+  border-color: #f965c6 !important;
+  border-radius: 10px !important;
+  margin: 0.2rem !important;
   cursor: pointer;
 }
 
 .button-1{
   background-color: rgb(113, 67, 204);
-  color: white;
-  font-family: secondary-font;
-  font-weight: bold;
-  border-style: groove;
-  padding: .5rem;
-  border-color: #f965c6;
-  border-radius: 10px;
-  margin-left: 55px;
+  color: white !important;
+  font-family: secondary-font !important;
+  font-weight: bold !important;
+  border-style: groove !important;
+  padding: .5rem !important;
+  border-color: #f965c6 !important;
+  border-radius: 10px !important;
+  margin: 0.2rem !important;
+  margin-left: 43px !important;
   cursor: pointer;
 }
 .react-chatbot-kit-chat-container {
@@ -56,16 +57,25 @@
   position: fixed;
 }
 
+.react-chatbot-kit-chat-container {
+  width: 345px;
+}
+
 .react-chatbot-kit-chat-bot-message {
   margin-left: 50px;
 }
 
+.react-chatbot-kit-chat-message-container {
+  overflow: auto !important;
+  scrollbar-color: #242424 #a238c7 !important;
+}
+
 .react-chatbot-kit-chat-header {
-  font-family: main-font;
+  font-family: main-font !important;
 }
 
 .react-chatbot-kit-chat-bot-message {
-  font-family: secondary-font;
+  font-family: secondary-font !important;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -75,17 +85,28 @@
   border-radius: 5px;
 }
 
+.react-chatbot-kit-user-avatar-container {
+  background-color: #f965c6;
+}
+
+.react-chatbot-kit-chat-input {
+  background: #242424;
+  border-top: 1px solid #242424;
+}
+
 .react-chatbot-kit-chat-header {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  background-color: #000000;
-  font-family: main-font;
-  display: flex;
-  align-items: center;
-  font-size: 0.85rem;
-  color: #f965c6;
-  padding: 12.5px;
-  font-weight: bold;
+  border-top-right-radius: 5px  !important;
+  border-top-left-radius: 5px !important;
+  background-color: #242424;
+  font-family: main-font !important;
+  display: flex !important;
+  -webkit-text-stroke: .2px #f965c6 !important;
+  align-items: center !important;
+  font-size: 0.85rem !important;
+  color: #ffffff !important;
+  padding: 12.5px !important;
+  font-weight: 200 !important;
+
 }
 
 @keyframes bounce {
