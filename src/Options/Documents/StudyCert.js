@@ -16,7 +16,7 @@ export default function StudyCert(props){
         <div>
             <button className="button-1" onClick={() => aadharsc()}>Aadhar Card</button>
             <button className="button-0" onClick={() => castesc()}>Caste</button>
-            <button className="button-0" onClick={() => entrancesc()}>Entrance</button>
+            <button className="button-1" onClick={() => entrancesc()}>Entrance Exam</button>
         </div>
     ]
 }
