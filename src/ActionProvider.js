@@ -155,7 +155,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   }
 
   const about = () => {
-    const message = createChatBotMessage('Hi, I see you want to know more about me! I am a ChatBot made a student of the school! I can perform basic tasks, I am still not fully optimised but will be better real soon!');
+    const message = createChatBotMessage('Hi, I see you want to know more about me! I am a ChatBot made by a student of the school! I can perform basic tasks, I am still not fully optimised but will be better real soon!');
     updateState(message)
   }
 
