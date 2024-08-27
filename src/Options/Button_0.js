@@ -26,13 +26,13 @@ export default function Button_0(props) {
 
     return [
         <div>
-            <button className="button-0" onClick={() => admission()}>Admission</button>
+            <button className="button-1" onClick={() => admission()}>Admission</button>
             <button className="button-0" onClick={() => fee()}>Fee</button>
             <button className="button-0" onClick={() => uniform()}>Uniform</button>
-            <button className="button-0" onClick={() => books()}>Books</button>
+            <button className="button-1" onClick={() => books()}>Books</button>
             <button className="button-0" onClick={() => pupilpodandid()}>Pupilpod/ID</button>
             <button className="button-0" onClick={() => document()}>Document</button>
-            <button className="button-0" onClick={() => other()}>Other</button>
+            <button className="button-1" onClick={() => other()}>Other</button>
         </div>
     ]
 }
