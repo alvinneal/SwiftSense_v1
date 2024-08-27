@@ -14,9 +14,9 @@ export default function Document(props){
 
     return [
         <div>
-            <button className="button-0" onClick={() => tc()}>TC</button>
+            <button className="button-1" onClick={() => tc()}>TC</button>
             <button className="button-0" onClick={() => studycert()}>Study Certificate</button>
-            <button className="button-0" onClick={() => passcert()}>Pass Certificate</button>
+            <button className="button-1" onClick={() => passcert()}>Pass Certificate</button>
         </div>
     ]
 }
