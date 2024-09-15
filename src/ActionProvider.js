@@ -4,14 +4,27 @@ import Admission from './Options/Admission';
 import Fee from './Options/Fee';
 import Uniform from './Options/Uniform';
 import Books from './Options/Books';
+import Timing from './Options/Timing';
 import Document from './Options/Documents/Document';
 import StudyCert from './Options/Documents/StudyCert';
 import Other from './Options/Other';
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
+  const sendResponse = (response) => {
+    const message = createChatBotMessage(response);
+    updateState(message);
+  }
+
+  const button_0 = () => {
+    const message = createChatBotMessage('Choose the option:', {
+      widget: "button_0"
+    });
+    updateState(message);
+  }
+
   const admission = () => {
-    const message = createChatBotMessage('Choose your Grade: ',{
+    const message = createChatBotMessage('Choose the Grade: ',{
       widget: "admission"
     });
     updateState(message)
@@ -51,6 +64,13 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     });
     updateState(message)
   }
+
+  const timing = () => {
+    const message = createChatBotMessage("Choose the Domain: ", {
+      widget: "timing"
+    });
+    updateState(message);
+  };
 
   const pupilpodandid = () => {
     const message = createChatBotMessage('For all Pupilpod and ID Card(or loss) related queries Contact School Office 080-22214416 or email to munrajuk@sjbhs.edu.in.');
@@ -118,7 +138,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   }
   
   const tc = () => {
-    const message = createChatBotMessage("Draft a letter to the Principal stating the reason for you leaving the school with parent's signature. ");
+    const message = createChatBotMessage("Draft a letter to the Principal stating the reason for you leaving the school with parent's signature.");
     updateState(message)
   }
 
@@ -128,7 +148,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   }
 
   const studycert = () => {
-    const message = createChatBotMessage('Choose reason:  ',{
+    const message = createChatBotMessage('Specify the reason:  ',{
       widget: "studycert"
     });
     updateState(message)
@@ -155,10 +175,41 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   }
 
   const about = () => {
-    const message = createChatBotMessage('Hi, I see you want to know more about me! I am a ChatBot made by a student of the school! I can perform basic tasks, I am still not fully optimised but will be better real soon!');
+    const message = createChatBotMessage('I am a low-intermedate level chatbot for assisting you on basic things, I was developed by a former student of the school.');
     updateState(message)
   }
 
+  const NotAnsweredMessage = () => (
+    <div>
+      I am sorry that I couldn't help you. I am still in development stage. You can leave a feedback{" "}
+      <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/K51dnSeWjBSjXSFA8">here</a> and help me to become better! 
+      You can contact the school office for your queries at 080-22214416.
+    </div>
+  );
+
+  const notanswered = () => {
+    const message = createChatBotMessage(<NotAnsweredMessage />);
+    updateState(message);
+  };
+
+  const Schooltime = () => (
+    <div>
+      School Timings:<br />LKG: 8:15 a.m. to 12:05 p.m.<br />UKG: 8:15 a.m. to 2:05 p.m.<br />Lunch Break: 11:25 a.m. to 12:05 p.m.<br /><br />Stds 1 & 2: 8:15 a.m. to 2:15 p.m.<br />Stds 3 & 4: 8:15 a.m. to 2:30 p.m.<br />Stds 5 & 6: 8:15 a.m. to 2:45 p.m.<br />Stds 8 to 12: 8:15 a.m. to 3:20 p.m.<br /><br />Lunch Break<br />Std 1 to 10: 12:05 p.m. to 12:45 p.m<br />Stds 11 & 12: 12:45 p.m. to 1:25 p.m.
+    </div>
+  );
+
+  const schooltiming = () => {
+    const message = createChatBotMessage(<Schooltime/>, {
+      html: true
+    });
+    updateState(message);
+  };
+
+  const officetiming = () => {
+    const message = createChatBotMessage("Weekdays: 8:15 a.m. to 12:30 p.m. & 1:30 p.m. to 4:00 p.m.\nSaturday: 8:30 a.m. to 12:30 p.m.");
+    updateState(message);
+  };
+  
   const updateState = (message) => {
     setState((prev) => ({
       ...prev,
@@ -171,33 +222,41 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
           actions: {
-            admission,
-            uniform,
-            fee,
-            books,
-            document,
-            other,
-            pupilpodandid,
-            busfee,
-            schoolfee,
-            clubfee,
-            ptafee,
-            frenchfee,
-            shoes,
-            housecolour,
-            stitched,
-            readymade,
-            kindergartenbooks,
-            onetotenbooks,
-            iscbooks,
-            studycert,
-            tc,
+            button_0,//done
+            admission,//done
+            uniform,//done
+            fee,//done
+            books,//done
+            document,//done
+            other,//done
+            pupilpodandid,//done
+            busfee,//done
+            schoolfee,//done
+            clubfee,//done
+            ptafee,//done
+            frenchfee,//done
+            shoes,//done
+            housecolour,//done
+            stitched,//done
+            readymade,//done
+            kindergartenbooks,//done
+            onetotenbooks,//done
+            iscbooks,//done
+            studycert,//done
+            tc,//done
             loss,
-            about,
-            castesc,
-            passcert,
-            aadharsc,
-            entrancesc,
+            timing,//done
+            officetiming,//done
+            schooltiming,//done
+            about,//done
+            notanswered,//done
+            NotAnsweredMessage,//done
+            Schooltime,//done
+            castesc,//done
+            passcert,//done
+            aadharsc,//done
+            entrancesc,//done
+            sendResponse,//done
           },
         });
       })}
