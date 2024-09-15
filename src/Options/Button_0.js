@@ -23,6 +23,9 @@ export default function Button_0(props) {
     const other = () => {
         props.actions.other()
     }
+    const notanswered = () => {
+        props.actions.notanswered()
+    }
 
     return [
         <div>
@@ -33,6 +36,7 @@ export default function Button_0(props) {
             <button className="button-0" onClick={() => pupilpodandid()}>Pupilpod/ID</button>
             <button className="button-0" onClick={() => document()}>Document</button>
             <button className="button-1" onClick={() => other()}>Other</button>
+            <button className="button-0" onClick={() => notanswered()}>Query not resolved</button>
         </div>
     ]
 }
