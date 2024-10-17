@@ -1,16 +1,16 @@
 @font-face {
   font-family: main-font!important;
-  src: url(https://sjbhs.edu.in/swiftSenseV1/font.otf)!important;
+  src: url(font.otf)!important;
 }
 
 @font-face {
   font-family: secondary-font!important;
-  src: url(https://sjbhs.edu.in/swiftSenseV1/font.otf)!important;
+  src: url(Roboto-Regular.ttf)!important;
 }
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;     
   box-sizing: border-box;
 }
 
@@ -34,6 +34,7 @@
   border-radius: 10px !important;
   margin: 0.2rem !important;
   cursor: pointer;
+  font-size: small !important;
 }
 
 .button-1{
@@ -48,6 +49,7 @@
   margin: 0.2rem !important;
   margin-left: 43px !important;
   cursor: pointer;
+  font-size: small !important;
 }
 .react-chatbot-kit-chat-container {
   width: 350px;
@@ -78,10 +80,12 @@
 
 .react-chatbot-kit-chat-header {
   font-family: main-font !important;
+  font-size: smaller !important;
 }
 
 .react-chatbot-kit-chat-bot-message {
   font-family: secondary-font !important;
+  font-size: small !important;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -89,6 +93,10 @@
   background-color: #242424;
   border-radius: 3px;
   border-radius: 5px;
+}
+
+.react-chatbot-kit-user-chat-message {
+  font-size: small !important;
 }
 
 .react-chatbot-kit-user-avatar-container {

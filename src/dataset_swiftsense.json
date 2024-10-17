@@ -1,0 +1,376 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hi there",
+        "Hola",
+        "Good Morning",
+        "Good evening",
+        "Good afternoon",
+        "What's up",
+        "Sup",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "menu"
+      ],
+      "responses": [
+        "Hey there! I am SwiftSense.",
+        "Hello! I'm SwiftSense.",
+        "Hi there! I'm SwiftSense."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"],
+      "responses": [
+        "See ya! Have a nice day.",
+        "Goodbye!",
+        "Have a wonderful day.",
+        "Bye! Have a great day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot!",
+        "thankyou",
+        "I need a favour",
+        "Can you do me a favour",
+        "I need help",
+        "Can you help me",
+        "okk",
+        "okie",
+        "nice work",
+        "well done",
+        "good job",
+        "thanks for the help",
+        "Thank You",
+        "its ok",
+        "Thanks",
+        "Good work",
+        "k",
+        "ok",
+        "okay"],
+      "responses": ["Happy to help!",
+        "Any time!",
+        "My pleasure to help.",
+        "Glad to help you."]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "what can you do",
+        "what are the things you can do",
+        "things you can do",
+        "who are you",
+        "about",
+        "you",
+        "what are you"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "document",
+      "patterns": [
+        "documents",
+        "document"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "studycert",
+      "patterns": [
+        "Study Certificate"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "entrancesc",
+      "patterns": [
+        "Entrance Exam",
+        "Entrance"
+      ],
+      "responses": [
+        "Kindly get your Transfer certificate or Draft a letter with full details related to Joining year and Graduating year."
+      ]
+    },
+    {
+      "tag": "passcert",
+      "patterns": [
+        "Pass Certificate",
+        "Pass"
+      ],
+      "responses": [
+        "Kindly obtain a FIR copy from Police Station and thereafter enclose a copy of the FIR and a copy of the Lost Pass Certificate along with a charge of ₹ 775/- as levied by the Council."
+      ]
+    },
+    {
+      "tag": "aadharsc",
+      "patterns": [
+        "aadhar card",
+        "aadhar"
+      ],
+      "responses": [
+        "Kindly draft a letter along with a passport size Photo and submit it at the office."
+      ]
+    },
+    {
+      "tag": "castesc",
+      "patterns": [
+        "caste certificate",
+        "caste"
+      ],
+      "responses": [
+        "Kindly draft a letter along with your parent's/student's caste certificate issued by the Government."
+      ]
+    },
+    {
+      "tag": "tc",
+      "patterns": [
+        "Transfer Certificate.",
+        "tc",
+        "transfer"
+      ],
+      "responses": [
+        "Draft a letter to the Principal stating the reason for you leaving the school with parent's signature."
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "books",
+        "book",
+        "study material"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "kindergartenbooks",
+      "patterns": [
+        "LKG",
+        "UKG",
+        "kindergarten"
+      ],
+      "responses": [
+        "Contact Vidyarthikendra - 7307059385/ 7753888113."
+      ]
+    },
+    {
+      "tag": "onetotenbooks",
+      "patterns": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "responses": [
+        "Contact Studentzone - 9986740540."
+      ]
+    },
+    {
+      "tag": "iscbooks",
+      "patterns": [
+        "ISC",
+        "11",
+        "12"
+      ],
+      "responses": [
+         "Contact Gangarams Book Bureau - 99450 84629."
+      ]
+    },
+    {
+      "tag": "uniform",
+      "patterns": [
+        "Uniform",
+        "Shirt",
+        "Pant"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "readymade",
+      "patterns": [
+        "ready-made",
+        "readymade uniform",
+        "readymade",
+        "ready made",
+        "tie",
+        "socks",
+        "belt"
+      ],
+      "responses": [
+        "Contact Scholar Clothing Co - 7899853058."
+      ]
+    },
+    {
+      "tag": "stitched",
+      "patterns": [
+        "stitched",
+        "stitched uniform"
+      ],
+      "responses": [
+        "Contact Vital Rao & Sons - 98459 86327."
+
+      ]
+    },
+    {
+      "tag": "housecolour",
+      "patterns": [
+        "house",
+        "colour",
+        "color"
+      ],
+      "responses": [
+        "Contact Specimen 8 Inc - 9108461334."
+
+      ]
+    },
+    {
+      "tag": "shoes",
+      "patterns": [
+        "school shoes",
+        "shoes"
+      ],
+      "responses": [
+        "Contact Sunrise Enterprises - 9353081600/ 080-23507129."
+
+      ]
+    },
+    {
+      "tag": "pupilandid",
+      "patterns": [
+        "pupilpod password",
+        "password",
+        "username",
+        "pupilpod",
+        "ID card",
+        "loss",
+        "lost"
+      ],
+      "responses": [
+        " For all Pupilpod and ID Card/Bus pass(or loss) related queries Contact School Office 080-22214416 or email to munrajuk@sjbhs.edu.in."
+      ]
+    },
+    {
+      "tag": "fee",
+      "patterns": [
+        "fee",
+        "fees",
+        "payment",
+        "pay"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "Admissions",
+        "Admission"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "busfee",
+      "patterns": [
+        "bus",
+        "bus fee"
+      ],
+      "responses": [
+        "Link to be Uploaded..."
+      ]
+    },
+    {
+      "tag": "French Fee",
+      "patterns": [
+        "french fee",
+        "french",
+        "french fees"
+      ],
+      "responses": [
+        "Link to be Uploaded..."
+      ]
+    },
+    {
+      "tag": "clubfee",
+      "patterns":[
+        "club fee",
+        "clubs fees",
+        "club",
+        "clubs"
+      ],
+      "responses": [
+        "Login to Pupilpod> Click on Club fees in the Home Page> click on View or Pay Now."
+      ]
+    },
+    {
+      "tag": "ptafee",
+      "patterns":[
+        "pta fee",
+        "pta fees",
+        "pta"
+      ],
+      "responses": [
+        "Login to Pupilpod> Click on PTA fees in the Home Page> click on View or Pay Now."
+      ]
+    },
+    {
+      "tag": "timing",
+      "patterns":[
+        "office",
+        "school",
+        "timing",
+        "time"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "officetiming",
+      "patterns":[
+        "office",
+        "office timing",
+        "office time"
+      ],
+      "responses": [
+        "Weekdays: 8:15 a.m. to 12:30 p.m. & 1:30 p.m. to 4:00 p.m.\nSaturday: 8:30 a.m. to 12:30 p.m."
+      ]
+    },
+    {
+      "tag": "schooltiming",
+      "patterns":[
+        "school timing",
+        "school time"
+      ],
+      "responses": ["School Timings:   LKG: 8:15 a.m. to 12:05 p.m.\nUKG: 8:15 a.m. to 2:05 p.m.\nLunch Break: 11:25 a.m. to 12:05 p.m.\n\nStds 1 & 2: 8:15 a.m. to 2:15 p.m.\nStds 3 & 4: 8:15 a.m. to 2:30 p.m.\nStds 5 & 6: 8:15 a.m. to 2:45 p.m.\nStds 8 to 12: 8:15 a.m. to 3:20 p.m.\n\nLunch Break\nStd 1 to 10: 12:05 p.m. to 12:45 p.m.\nStds 11 & 12: 12:45 p.m. to 1:25 p.m."]
+    },
+    {
+      "tag": "notanswered",
+      "patterns": [
+        "not helpful",
+        "waste",
+        "wrong",
+        " no "
+      ],
+      "responses": [
+        "I am sorry that I couldn't help you. I am still in development stage. You can leave a feedback <a target=\"_blank\" href=\"https://forms.gle/K51dnSeWjBSjXSFA8\"> here</a> and help me to become better! You can contact the school office for your queries at 080-22214416."]
+    }
+  ]
+}
