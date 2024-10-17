@@ -1,11 +1,11 @@
 @font-face {
   font-family: main-font!important;
-  src: url(font.otf)!important;
+  src: url(https://sjbhs.edu.in/swiftSenseV1/font.otf)!important;
 }
 
 @font-face {
   font-family: secondary-font!important;
-  src: url(Roboto-Regular.ttf)!important;
+  src: url(https://sjbhs.edu.in/swiftSenseV1/Roboto-Regular.otf)!important;
 }
 
 * {
